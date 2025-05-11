@@ -1,0 +1,113 @@
+
+body {
+  
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+
+.navbar-container {
+  width: 100%;
+  padding: 0.8rem 2rem;
+  background: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
+.admin-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background: white;
+  margin: 0; /* Removed 20px margin */
+  border-radius: 0; /* Removed rounded corners */
+  min-height: calc(100vh - 70px);
+}
+
+
+.component-container {
+  width: 100%;
+  padding: 0;
+  background: #ffffff;
+  border: none;
+}
+
+
+.dashboard-container, 
+.orders-container, 
+.stock-management-container {
+  border: none;
+  box-shadow: none;
+  margin: 0;
+  padding: 1.5rem 2rem;
+}
+
+
+
+
+.dashboard-title {
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+/* Orders */
+.orders-title {
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+/* Stock Management */
+.stock-management-container h2 {
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  .navbar-container {
+    padding: 0.8rem 1rem;
+  }
+  
+  .dashboard-container,
+  .orders-container,
+  .stock-management-container {
+    padding: 1.2rem 1rem;
+  }
+}
+
+.buyer-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background: white;
+  margin: 0; /* Removed 20px margin */
+  border-radius: 0; /* Removed rounded corners */
+  min-height: calc(100vh - 70px);
+}
+
+.home, 
+.product, 
+.checkout {
+  padding: 25px;
+  min-height: calc(100vh / 3);
+  border: none !important;
+}
+
+
+.dashboard, .orders, 
+.home, .product {
+  border-bottom: 1px solid #f8f8f8; 
+}
+
+
+.stock-management,
+.checkout {
+  border-bottom: none !important;
+}
