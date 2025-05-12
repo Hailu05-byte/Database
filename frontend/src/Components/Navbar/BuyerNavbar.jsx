@@ -34,7 +34,7 @@ function BuyerNavbar() {
           <ScrollLink to="product" smooth={true} duration={500} offset={-70}>Product</ScrollLink>
         </li>
         <li>
-          <ScrollLink to="checkout" smooth={true} duration={500} offset={-70}>Checkout</ScrollLink>
+          <ScrollLink to="contact" smooth={true} duration={500} offset={-70}>Contact</ScrollLink>
         </li>
       </ul>
 

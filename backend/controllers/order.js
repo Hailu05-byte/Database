@@ -6,6 +6,7 @@ const getOrders = async (req, res) => {
       SELECT 
         id,
         buyer_name,
+        product_name,
         email,
         address,
         city,

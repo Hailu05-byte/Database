@@ -1,31 +1,22 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './AdminLogin.css';
+import './BuyerLogin.css';
 
-const AdminLogin = ({ setUserRole }) => {
+const BuyerLogin = ({ setUserRole }) => {
   const [values, setValues] = useState({ email: '', password: '' });
-  const [error, setError] = useState('');
   const navigate = useNavigate();
-
-  const validEmail = 'admin@gmail.com';
-  const validPassword = '12345';
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (values.email === validEmail && values.password === validPassword) {
-      setUserRole('admin'); 
-      navigate('/admin');
-
-    } else {
-      setError('Invalid email or password.');
-    }
+    // Allow any credentials
+    setUserRole('buyer');
+    navigate('/buyer');
   };
 
   return (
-    <div className="admin-login-container">
-      <div className="admin-login-box">
-        <h2 className='adminlogin'>Admin Login</h2>
-        {error && <p className="error-msg">{error}</p>}
+    <div className="buyer-login-container">
+      <div className="buyer-login-box">
+        <h2 className='buerlogin'>User Login</h2>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label>Email:</label>
@@ -56,5 +47,5 @@ const AdminLogin = ({ setUserRole }) => {
   );
 };
 
-export default AdminLogin;
+export default BuyerLogin;
 

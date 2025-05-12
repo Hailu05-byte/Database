@@ -2,7 +2,7 @@
   max-width: 1200px;
   margin: auto;
   padding: 2rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #fdfdfd;
 }
 
@@ -130,7 +130,7 @@
   border-radius: 5px;
 }
 
-.pc-checkout {
+.pc-contact {
   background-color: #ffffff;
   padding: 20px;
   border-radius: 12px;

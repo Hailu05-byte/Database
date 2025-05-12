@@ -83,7 +83,7 @@ const Dashboard = () => {
               {profit.length > 0 ? (
                 profit.map((p, i) => (
                   <p key={i}>
-                    <strong>{p.month}:</strong> Br{p.profit}
+                    <strong>{p.month}:</strong> ${p.profit}
                   </p>
                 ))
               ) : (

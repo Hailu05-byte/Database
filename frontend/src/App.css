@@ -1,22 +1,18 @@
-
 body {
-  
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
 }
-
 
 .navbar-container {
   width: 100%;
   padding: 0.8rem 2rem;
   background: #ffffff;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
   z-index: 1000;
 }
-
 
 .admin-layout {
   display: flex;
@@ -28,7 +24,6 @@ body {
   min-height: calc(100vh - 70px);
 }
 
-
 .component-container {
   width: 100%;
   padding: 0;
@@ -36,18 +31,14 @@ body {
   border: none;
 }
 
-
-.dashboard-container, 
-.orders-container, 
+.dashboard-container,
+.orders-container,
 .stock-management-container {
   border: none;
   box-shadow: none;
   margin: 0;
   padding: 1.5rem 2rem;
 }
-
-
-
 
 .dashboard-title {
   padding-bottom: 1rem;
@@ -74,7 +65,7 @@ body {
   .navbar-container {
     padding: 0.8rem 1rem;
   }
-  
+
   .dashboard-container,
   .orders-container,
   .stock-management-container {
@@ -92,22 +83,22 @@ body {
   min-height: calc(100vh - 70px);
 }
 
-.home, 
-.product, 
-.checkout {
+.home,
+.product,
+.contact {
   padding: 25px;
   min-height: calc(100vh / 3);
   border: none !important;
 }
 
-
-.dashboard, .orders, 
-.home, .product {
-  border-bottom: 1px solid #f8f8f8; 
+.dashboard,
+.orders,
+.home,
+.product {
+  border-bottom: 1px solid #f8f8f8;
 }
 
-
 .stock-management,
-.checkout {
+.contact {
   border-bottom: none !important;
 }
